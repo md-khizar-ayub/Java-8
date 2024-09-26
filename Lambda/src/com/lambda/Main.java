@@ -9,16 +9,21 @@ public class Main {
 //		interface1.sayHello();
 		
 		
-		MyInterface myInterface = new MyInterface() {
-			
-			@Override
-			public void sayHello() {
-				System.out.println("Hello from anonymous class");
-				
-			}
+//		MyInterface myInterface = new MyInterface() {
+//			
+//			@Override
+//			public void sayHello() {
+//				System.out.println("Hello from anonymous class");
+//				
+//			}
+//		};
+//		myInterface.sayHello();
+//		
+		
+		MyInterface myInterface = () -> {
+			System.out.println("Lambda expression");
 		};
 		myInterface.sayHello();
-		
 		System.out.println("END");
 	}
 
