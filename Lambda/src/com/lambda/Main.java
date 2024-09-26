@@ -20,9 +20,16 @@ public class Main {
 //		myInterface.sayHello();
 //		
 		
-		MyInterface myInterface = () -> System.out.println("Lambda expression");
+//		MyInterface myInterface = () -> System.out.println("Lambda expression");
+//		
+//		myInterface.sayHello();
 		
-		myInterface.sayHello();
+		
+		
+		SumInter inter =(i, j) ->{
+			return i+j;
+		};
+		System.out.println(inter.sum(10, 20));
 		System.out.println("END");
 	}
 
