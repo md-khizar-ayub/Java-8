@@ -20,9 +20,8 @@ public class Main {
 //		myInterface.sayHello();
 //		
 		
-		MyInterface myInterface = () -> {
-			System.out.println("Lambda expression");
-		};
+		MyInterface myInterface = () -> System.out.println("Lambda expression");
+		
 		myInterface.sayHello();
 		System.out.println("END");
 	}
