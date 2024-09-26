@@ -26,9 +26,7 @@ public class Main {
 		
 		
 		
-		SumInter inter =(i, j) ->{
-			return i+j;
-		};
+		SumInter inter =(i, j) -> i+j;
 		System.out.println(inter.sum(10, 20));
 		System.out.println("END");
 	}
